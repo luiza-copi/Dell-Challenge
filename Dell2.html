@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuTickets S.A.</title>
+    <style>
+        body {
+            background-color:white;
+            color: black;
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color:coral;
+        }
+    </style>
+</head>
+<body>
+   <h1><strong>Escolha o seu horário, abaixo:</strong></h1>
+   <center>
+    <button id = "botão1">6 horas - Preço: R$ 19,45</button>
+    <br></br>
+    <button id = "botão2">16 horas - Preço: R$ 23,50</button>
+   </center>
+    <br></br>
+   <input type="reset" value="Sair do sistema" />
+
+   <script>
+//Passagens de Porto Alegre - Florianópolis
+        function mensagemIndispo() {
+            alert('Lamentamos, mas não há assentos disponíveis para esse horário!');
+        }
+
+        let botao2 = document.querySelector('#botão2'); 
+
+        botao2.addEventListener('click', mensagemIndispo);
+
+        function mapaDeAssentos() {
+            window.location.href = "mapadeassentos.html";
+        }
+            
+        let botao1 = document.querySelector('#botão1'); 
+                
+        botao1.addEventListener('click', mapaDeAssentos);
+
+   </script> 
+</body>
+</html>
