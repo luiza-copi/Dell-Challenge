@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuTickets S.A.</title>
+    <title>Viação União Santa Cruz</title>
     <style>
-        div {
-            background-color:white;
-            color: white;
-            font: normal 10pt Arial;
-        }
+       
         div {
             color:rgb(118, 80, 255);
-        }
-
-        h1 {
-            background-color:white;
-            color: rgb(255, 255, 255);
-            font: normal 10pt Arial;
+            font: normal 12pt Arial;
         }
 
         p {
-            background-color:white;
             color: black;
-            font: normal 10pt Arial;
+            font: normal 12pt Arial;
         }
 
         a:link{
@@ -37,56 +27,71 @@
 <body>
    <h1>Olá!</h1>
 <script>
+
     let nome = window.prompt('Primeiramente, gostaríamos de saber, qual o seu nome?');//abre uma caixa para pessoa escrever
     document.body.innerHTML += `É um grande prazer te conhecer ${nome}!`; 
+
 </script> 
+
+  
    <p>Se você está a procura de passagem barata, encontrou!</p>
    <div> <!-- início do mapa de assentos inicial, com os assentos ocupados-->
+        <center>
         <h1><strong>Assentos disponíveis:</strong></h1>
+        
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão1"><abbr title="Assento Disponível">01</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão2"><abbr title="Assento Disponível">02</abbr></button> <button type="button" class="btn btn-danger" id = "botão3" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">03</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão4"><abbr title="Assento Disponível">04</abbr></button>
+        <br></br>
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão5"><abbr title="Assento Disponível">05</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão6"><abbr title="Assento Disponível">06</abbr></button> <button type="button" class="btn btn-danger" id = "botão7" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">07</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão8"><abbr title="Assento Disponível">08</abbr></button>
+        <br></br>
+        <button type="button" class="btn btn-danger" id = "botão9" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">09</abbr></button><button type="button" class="btn btn-danger" id = "botão10" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">10</abbr></button> <button type="button" class="btn btn-danger" id = "botão11" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">11</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão12"><abbr title="Assento Disponível">12</abbr></button>
+        <br></br>
+        <button type="button" class="btn btn-danger" id = "botão13" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">13</abbr></button> <button type="button" class="btn btn-danger" id = "botão14" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">14</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão15"><abbr title="Assento Disponível">15</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão16"><abbr title="Assento Disponível">16</abbr></button>
+        <br></br>
+        <button type="button" class="btn btn-danger" id = "botão17" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">17</abbr></button> <button type="button" class="btn btn-danger" id = "botão18" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">18</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão19"><abbr title="Assento Disponível">19</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão20"><abbr title="Assento Disponível">20</abbr></button>
+        <br></br>
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão21"><abbr title="Assento Disponível">21</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão22"><abbr title="Assento Disponível">22</abbr></button> <button type="button" class="btn btn-danger" id = "botão23" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">23</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão24"><abbr title="Assento Disponível">24</abbr></button>
+        <br></br>
+        <button type="button" class="btn btn-danger" id = "botão25" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">25</abbr></button> <button type="button" class="btn btn-danger" id = "botão26" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">26</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão27"><abbr title="Assento Disponível">27</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão28"><abbr title="Assento Disponível">28</abbr></button>
+        <br></br>
+        <button type="button" class="btn btn-danger" id = "botão29" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">29</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão30"><abbr title="Assento Disponível">30</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão31"><abbr title="Assento Disponível">31</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão32"><abbr title="Assento Disponível">32</abbr></button>
+        <br></br>
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão33"><abbr title="Assento Disponível">33</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão34"><abbr title="Assento Disponível">34</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão35"><abbr title="Assento Disponível">35</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão36"><abbr title="Assento Disponível">36</abbr></button>
+        <br></br>
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão37"><abbr title="Assento Disponível">37</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão38"><abbr title="Assento Disponível">38</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão39"><abbr title="Assento Disponível">39</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão40"><abbr title="Assento Disponível">40</abbr></button>
+        <br></br>
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão41"><abbr title="Assento Disponível">41</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão42"><abbr title="Assento Disponível">42</abbr></button> <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão43"><abbr title="Assento Disponível">43</abbr></button><button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão44"><abbr title="Assento Disponível">44</abbr></button>
+        <br></br>
+        <button type="button" onclick="msgEscolhaDepois()" class="btn btn-success" id = "botão45"><abbr title="Assento Disponível">45</abbr></button> <button type="button" class="btn btn-danger"id = "botão46" class="btn btn-lg btn-primary" disabled><abbr title="Assento Indisponível">46</abbr></button>
+        </center>
+    </div>
+    <br></br>
+    
+    <center>
+    <ul>
+        <li><strong>Número de assentos total: 46</strong></li>
+        <li><strong>Número de assentos disponíveis: 32</strong></li>
+        <li><strong>Número de assentos reservados Porto Alegre -> Florianópolis: 7</strong></li>
+        <li><strong>Número de assentos reservados Porto Alegre -> Criciúma: 7</strong></li>
+        <li><strong>Total acumulado em reservas: 14</strong></li>    
+    </ul>
+    </center>
 
-        <button type="button" class="btn btn-success" id = "botão1">01</button><button type="button" class="btn btn-success" id = "botão2">02</button> <button type="button" class="btn btn-danger" id = "botão3" class="btn btn-lg btn-primary" disabled>03</button><button type="button" class="btn btn-success" id = "botão4">04</button>
+    <br></br>
+    <div class = button> <!-- início para escolher a rota-->
+        <h2><strong>Escolha a sua rota, abaixo:</strong></h2>
         <br></br>
-        <button type="button" class="btn btn-success" id = "botão5">05</button><button type="button" class="btn btn-success" id = "botão6">06</button> <button type="button" class="btn btn-danger" id = "botão7" class="btn btn-lg btn-primary" disabled>07</button><button type="button" class="btn btn-success" id = "botão8">08</button>
-        <br></br>
-        <button type="button" class="btn btn-danger" id = "botão9" class="btn btn-lg btn-primary" disabled>09</button><button type="button" class="btn btn-danger" id = "botão10" class="btn btn-lg btn-primary" disabled>10</button> <button type="button" class="btn btn-danger" id = "botão11" class="btn btn-lg btn-primary" disabled>11</button><button type="button" class="btn btn-success" id = "botão12">12</button>
-        <br></br>
-        <button type="button" class="btn btn-danger" id = "botão13" class="btn btn-lg btn-primary" disabled>13</button> <button type="button" class="btn btn-danger" id = "botão14" class="btn btn-lg btn-primary" disabled>14</button> <button type="button" class="btn btn-success" id = "botão15">15</button><button type="button" class="btn btn-success" id = "botão16">16</button>
-        <br></br>
-        <button type="button" class="btn btn-danger" id = "botão17" class="btn btn-lg btn-primary" disabled>17</button> <button type="button" class="btn btn-danger" id = "botão18" class="btn btn-lg btn-primary" disabled>18</button> <button type="button" class="btn btn-success" id = "botão19">19</button><button type="button" class="btn btn-success" id = "botão20">20</button>
-        <br></br>
-        <button type="button" class="btn btn-success" id = "botão21">21</button><button type="button" class="btn btn-success" id = "botão22">22</button> <button type="button" class="btn btn-danger" id = "botão23" class="btn btn-lg btn-primary" disabled>23</button><button type="button" class="btn btn-success" id = "botão24">24</button>
-        <br></br>
-        <button type="button" class="btn btn-danger" id = "botão25" class="btn btn-lg btn-primary" disabled>25</button> <button type="button" class="btn btn-danger" id = "botão26" class="btn btn-lg btn-primary" disabled>26</button> <button type="button" class="btn btn-success" id = "botão27">27</button><button type="button" class="btn btn-success" id = "botão28">28</button>
-        <br></br>
-        <button type="button" class="btn btn-danger" id = "botão29" class="btn btn-lg btn-primary" disabled>29</button> <button type="button" class="btn btn-success" id = "botão30">30</button> <button type="button" class="btn btn-success" id = "botão31">31</button><button type="button" class="btn btn-success" id = "botão32">32</button>
-        <br></br>
-        <button type="button" class="btn btn-success" id = "botão33">33</button><button type="button" class="btn btn-success" id = "botão34">34</button> <button type="button" class="btn btn-success" id = "botão35">35</button><button type="button" class="btn btn-success" id = "botão36">36</button>
-        <br></br>
-        <button type="button" class="btn btn-success" id = "botão37">37</button><button type="button" class="btn btn-success" id = "botão38">38</button> <button type="button" class="btn btn-success" id = "botão39">39</button><button type="button" class="btn btn-success" id = "botão40">40</button>
-        <br></br>
-        <button type="button" class="btn btn-success" id = "botão41">41</button><button type="button" class="btn btn-success" id = "botão42">42</button> <button type="button" class="btn btn-success" id = "botão43">43</button><button type="button" class="btn btn-success" id = "botão44">44</button>
-        <br></br>
-        <button type="button" class="btn btn-success" id = "botão45">45</button> <button type="button" class="btn btn-danger"id = "botão46" class="btn btn-lg btn-primary" disabled>46</button>
-   </div>
+        <button type="button"><a href="Dell2.html"> Porto Alegre - Florianópolis </a></button>
+        <br></br> 
+        <button type="button"><a href="Dell3.html"> Porto Alegre - Criciúma </a></button>
+        <br></br> 
+        <button type="button"><a href="Dell4.html"> Criciúma - Florianópolis </a></button>
+    </div>
 <script>
 
-    function assentoDispo() {
-        alert('Por favor, primeiro escolha a sua rota abaixo');
-    }
-    let botaoSuccess = document.querySelector('#botão1'); 
+    function msgEscolhaDepois() {
+            alert('Por favor, primeiro escolha sua rota abaixo!');
+        }
 
-    botaoSuccess.addEventListener('click', assentoDispo);
 </script> 
-   <br></br>
-   <div class = button> <!-- início para escolher a rota-->
-       <h2><strong>Escolha a sua rota, abaixo:</strong></h2>
-       <center>
-       <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="Dell2.html"> Porto Alegre - Florianópolis </a></button>
-       <br></br> 
-       <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="Dell3.html"> Porto Alegre - Criciúma </a></button>
-       <br></br> 
-       <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="Dell4.html"> Criciúma - Florianópolis </a></button>
-       </center>
-   </div>
 </body>
 </html>

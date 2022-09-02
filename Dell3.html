@@ -7,27 +7,54 @@
     <title>LuTickets S.A.</title>
     <style>
         body {
-            background-color:rgb(137, 82, 189);
-            color: white;
-            font: normal 25pt Arial;
+            background-color:white;
+            color: black;
+            font: normal 15pt Arial;
         }
         h1 {
             color:coral;
         }
     </style>
+
 </head>
 <body>
-   <h1>Olá!</h1>
+   <h1><strong>Escolha o seu horário, abaixo:</strong></h1>
+   <center>
+    <button id = "botão1" onclick="mapaDeAssentos1()">6 horas - Preço: R$ 12,90</button>
+    <br></br>
+    <button id = "botão2" onclick="mapaDeAssentos2()">16 horas - Preço: R$ 15,90</button>
+   </center>
+    <br></br>
+   <button id = "voltarPaginaInicial">Voltar para Página Inicial</button>  <input type="reset" value="Sair do sistema" />
+
    <script>
 //Passagens de Porto Alegre - Criciúma
+
+function mapaDeAssentos1() {
+            window.location.href = "reserva_Dell2_3.html";
+        }
+            
+        let botao1 = document.querySelector('botão1'); 
+                
+        botao1.addEventListener('click', mapaDeAssentos);
+
+        function mapaDeAssentos2() {
+            window.location.href = "reserva_Dell2_3.html";
+        }
+            
+        let botao2 = document.querySelector('#botão2'); 
+                
+        botao1.addEventListener('click', mapaDeAssentos);
+
+
+        function paginaInicial() {
+            window.location.href = "Dell.html";
+        }
+            
+        let voltarPaginaInicial = document.querySelector('#voltarPaginaInicial'); 
+                
+        voltarPaginaInicial.addEventListener('click', paginaInicial);
+
    </script> 
-    <p>Se você está a procura de passagem barata, encontrou!</p>
-    <div> 
-    <h2><strong>Escolha o seu horário, abaixo:</strong></h2>
-    <br></br> 
-        <center>
-   
-        </center>
-    </div>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuTickets S.A.</title>
+    <title>Viação União Santa Cruz</title>
     <style>
         body {
             background-color:white;
@@ -15,34 +15,45 @@
             color:coral;
         }
     </style>
+
 </head>
 <body>
    <h1><strong>Escolha o seu horário, abaixo:</strong></h1>
    <center>
-    <button id = "botão1">6 horas - Preço: R$ 19,45</button>
+    <button id = "botão1" onclick="mapaDeAssentos1()" >6 horas - Preço: R$ 19,45</button>
     <br></br>
-    <button id = "botão2">16 horas - Preço: R$ 23,50</button>
+    <button id = "botão2" onclick="mapaDeAssentos2()" >16 horas - Preço: R$ 23,50</button>
    </center>
     <br></br>
-   <input type="reset" value="Sair do sistema" />
+   <button id = "voltarPaginaInicial">Voltar para Página Inicial</button>  <input type="reset" value="Sair do sistema" />
 
    <script>
 //Passagens de Porto Alegre - Florianópolis
-        function mensagemIndispo() {
-            alert('Lamentamos, mas não há assentos disponíveis para esse horário!');
-        }
 
-        let botao2 = document.querySelector('#botão2'); 
-
-        botao2.addEventListener('click', mensagemIndispo);
-
-        function mapaDeAssentos() {
-            window.location.href = "mapadeassentos.html";
+        function mapaDeAssentos1() {
+            window.location.href = "reserva_Dell2_3.html";
         }
             
-        let botao1 = document.querySelector('#botão1'); 
+        let botao1 = document.querySelector('botão1'); 
                 
         botao1.addEventListener('click', mapaDeAssentos);
+
+        function mapaDeAssentos2() {
+            window.location.href = "reserva_Dell2_3.html";
+        }
+            
+        let botao2 = document.querySelector('#botão2'); 
+                
+        botao1.addEventListener('click', mapaDeAssentos);
+
+
+        function paginaInicial() {
+            window.location.href = "Dell.html";
+        }
+            
+        let voltarPaginaInicial = document.querySelector('#voltarPaginaInicial'); 
+                
+        voltarPaginaInicial.addEventListener('click', paginaInicial);
 
    </script> 
 </body>
